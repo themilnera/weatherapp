@@ -11,10 +11,10 @@
     </header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="weather.html">Weather</a></li>
-        <li style="float: right"><a href="about.html">About</a></li>
+        <li id="home-link" ><a href="index.html">Home</a></li>
+        <li id="news-link"><a href="news.html">News</a></li>
+        <li id="weather-link" class="active"><a href="weather.html">Weather</a></li>
+        <li id="about-link"><a href="about.html">About</a></li>
       </ul>
     </nav>
     <section class="weather-section"></section>
@@ -36,19 +36,19 @@
                   <p>Wind Speed: <span id="current-windSpeed"></span> 8mph</p>
                 </div>
               </section>
-              <div>
+              <div class="summary-img">
                 <img src="images/partlyCloudy.jpg" alt="Partly Cloudy" width="300" height="300" />
               </div>
             </article>
 
             <!-- 5 day forecast -->
-            <div class="article-five-day">
-              <article id="forecastContainer">
-                <h2 id="forecastTitle">5 Day Forecast</h2>
-                <h3 id="city"></h3>
+            <div class="article-centered">
+              <article class="forecast-container">
+                <h2 id="forecast-title">5 Day Forecast</h2>
+                <h3 id="city">Salt Lake City</h3>
                 <div class="flex">
                   <div class="flex-col">
-                    <span id="dayTitle1" class="col-head"></span>
+                    <span id="dayTitle1" class="col-head">Monday</span>
                     <img src="images/Umbrella.jpg" id="weatherIcon1" class="weatherIcon" width="50" height="50"/>
                     <span class="temp-data">
                       <span id="data1"></span>
@@ -56,7 +56,7 @@
                     </span>
                   </div>
                   <div class="flex-col">
-                    <span id="dayTitle2" class="col-head"></span>
+                    <span id="dayTitle2" class="col-head">Tuesday</span>
                     <img src="images/Sunny.jpg" id="weatherIcon2" class="weatherIcon" width="50" height="50"/>
                     <div class="temp-data">
                       <span id="data2"></span>
@@ -64,7 +64,7 @@
                     </div>
                   </div>
                   <div class="flex-col">
-                    <span id="dayTitle3" class="col-head"></span>
+                    <span id="dayTitle3" class="col-head">Wednesday</span>
                     <img src="images/partlyCloudy.jpg" id="weatherIcon3" class="weatherIcon" width="50" height="50"/>
                     <div class="temp-data">
                       <span id="data3"></span>
@@ -72,7 +72,7 @@
                     </div>
                   </div>
                   <div class="flex-col">
-                    <span id="dayTitle4" class="col-head"></span>
+                    <span id="dayTitle4" class="col-head">Thursday</span>
                     <img src="images/thunderStorms.jpg" id="weatherIcon4" class="weatherIcon" width="50" height="50"/>
                     <div class="temp-data">
                       <span id="data4"></span>
@@ -80,7 +80,7 @@
                     </div>
                   </div>
                   <div class="flex-col">
-                    <span id="dayTitle5" class="col-head"></span>
+                    <span id="dayTitle5" class="col-head">Friday</span>
                     <img src="images/partlyCloudy.jpg" id="weatherIcon5" class="weatherIcon" width="50" height="50"/>
                     <div class="temp-data">
                       <span id="data5"></span>
@@ -93,7 +93,6 @@
           </div>
         </div>
       </section>
-      <hr />
 </body>
 <footer class="footer">
     <p>© Copyright No Copyright because I don't care right now</p>
